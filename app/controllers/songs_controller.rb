@@ -23,6 +23,7 @@ class SongsController < ApplicationController
 
   def update
     @song.update(song_params)
+    redirect_to @song
   end
 
   private
