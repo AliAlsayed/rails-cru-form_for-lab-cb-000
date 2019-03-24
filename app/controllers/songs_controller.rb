@@ -5,5 +5,6 @@ class SongsController < ApplicationController
 
   def create
     @song = Song.create(params[:song])
+    redirect_to @song
   end
 end
