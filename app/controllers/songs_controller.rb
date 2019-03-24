@@ -7,4 +7,8 @@ class SongsController < ApplicationController
     @song = Song.create(params[:song])
     redirect_to @song
   end
+
+  def show
+    @song = Song.find(params[:id])
+  end
 end
